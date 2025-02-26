@@ -1,0 +1,10 @@
+path:
+  model_path: 'autoencoder_model.h5' # Путь к модели
+  scaler_path: 'scaler.save' # Путь к scaler
+
+network_settings:
+  interface_type: 'ethernet' # Тип интерфейса (wi-fi или ethernet)
+  interval: 1800 # Интервал захвата пакетов тренировочного датасета
+  total_duration : 86400 # Общая продолжительность захвата тренировочного датасета (сутки)
+  capture_duration : 3600 # Длительность захвата за один раз для тестового датасета (час)
+  check_interval : 0 # Интервал проверки на аномалии для тестового датасета
